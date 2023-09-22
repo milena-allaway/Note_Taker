@@ -2,12 +2,9 @@
 // import all the required dependencies
 const express = require('express');
 const path = require('path');
-
-// Helper function for generating unique ids
-const uuid = require('./helpers/uuid');
-
-// Helper functions for reading and writing to the JSON file
-const { readFromFile, readAndAppend } = require('./helpers/fsUtils');
+//https://www.npmjs.com/package/uuid
+const { v4: uuidv4 } = require('uuid');
+uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
 
 const PORT = 3001;
 
@@ -21,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // GET Route for homepage
-app.get('*', (req, res) =>
+app.get('/', (req, res) =>
     res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
@@ -31,13 +28,13 @@ app.get('/notes', (req, res) =>
 );
 
 // GET Route for retrieving all the notes
-app.get('/api/notes', (req, res) => {
+app.get('/notes', (req, res) => {
     console.info(`${req.method} request received for notes`);
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
 // POST Route for a new note
-app.post('/api/notes', (req, res) => {
+app.post('/notes', (req, res) => {
     console.info(`${req.method} request received to add a note`);
 
     const { title, text } = req.body;
@@ -57,7 +54,7 @@ app.post('/api/notes', (req, res) => {
 });
 
 // DELETE Route for a specific tip
-app.delete('/api/notes/:note_id', (req, res) => {
+app.delete('/notes/:note_id', (req, res) => {
     const noteId = req.params.note_id;
     console.log(noteId);
     readFromFile('./db/db.json')
