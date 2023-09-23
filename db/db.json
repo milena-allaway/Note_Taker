@@ -2,15 +2,5 @@
     {
         "title": "Test Title",
         "text": "Test text"
-    },
-    {
-        "title": "another test",
-        "text": "meow",
-        "id": "eff3524e-68b5-43b9-9e98-dddf14713d96"
-    },
-    {
-        "title": "test note",
-        "text": "hello",
-        "id": "2aa0d2d7-eabc-427b-a45d-704ca017d192"
     }
 ]
