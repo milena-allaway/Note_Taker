@@ -2,5 +2,15 @@
     {
         "title": "Test Title",
         "text": "Test text"
+    },
+    {
+        "title": "Hand in Assignment",
+        "text": "note taker project due wednesday sept. 27 2023",
+        "id": "cf2753da-d83c-44c5-8c2f-301c8c937cd1"
+    },
+    {
+        "title": "killcode",
+        "text": "for windows: taskkill /im node.exe, kills all node processes, very important!",
+        "id": "60c68e55-458c-4144-bafa-2a6134d37913"
     }
 ]

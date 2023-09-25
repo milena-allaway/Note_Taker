@@ -4,6 +4,7 @@ const fs = require('fs');
 const express = require('express');
 const path = require('path');
 //https://www.npmjs.com/package/uuid
+// generate a unique id for each note
 const { v4: uuidv4 } = require('uuid');
 // define the port
 const PORT = process.env.PORT || 3001;
