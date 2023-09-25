@@ -18,7 +18,7 @@ This is a simple note taking application that allows users to create, save, and 
 N/A no installation required
 
 ## Usage
-To use this application, visit the deployed application on Heroku: https://note-taker-milena.herokuapp.com/
+To use this application, visit the deployed application on Heroku: https://vast-beach-90939-45f7bfec0a20.herokuapp.com/
 There you will see the following landing page:
 ![landing page](./public/assets/images/landing-page.png)
 
