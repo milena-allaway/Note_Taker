@@ -20,10 +20,12 @@ N/A no installation required
 ## Usage
 To use this application, visit the deployed application on Heroku: https://vast-beach-90939-45f7bfec0a20.herokuapp.com/
 There you will see the following landing page:
-![landing page](./public/assets/images/landing-page.png)
+![Screenshot homepage](https://github.com/milena-allaway/Note_Taker/assets/132115087/6e8fd447-c804-417e-8194-8a438bb0c6ca)
+
 
 you can click on the "Get Started" button to be taken to the notes page:
-![notes page](./public/assets/images/notes-page.png)
+![Screenshot notespage](https://github.com/milena-allaway/Note_Taker/assets/132115087/8edecf0f-44b4-4dea-91ef-db517a232785)
+
 
 To create a new note, click on the plus icon in the top right corner. This will allow you to enter a title and text for your note, or clear the page if you need to start over. Once you have entered a title and text, you will see a save icon appear in the top right corner. Click on this icon to save your note. You can create as many notes as you like. To view a note, click on the note title in the left hand column. To delete a note, click on the trash can icon next to the note title.
 
